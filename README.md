@@ -65,6 +65,7 @@ group by case when marca = 'lenovo' then 'Lenovo'
      else marca 
 end 
 order by 2 desc) SELECT `marca_ajustada`,SUM(`media_preco_atual`) `column_8c15775e2` FROM q GROUP BY `marca_ajustada`
+
 ![newplot](https://user-images.githubusercontent.com/86385596/214394947-97f77d1a-1f06-4938-b65b-5fad9eef3f44.png)
 
 
@@ -82,7 +83,8 @@ case when ram_type = 'LPDDR3' then 'DDR3'
      when ram_type in ('LPDDR4','LPDDR4X') then 'DDR4'
 else ram_type end
 
-order by 2 desc
+order by 2 desc 
+.
 ![plot3](https://user-images.githubusercontent.com/86385596/214395050-d1e4b1ce-8582-4a57-b922-39a0794853ff.png)
 
 .
